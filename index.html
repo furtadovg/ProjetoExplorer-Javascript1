@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo Adivinhação</title>
@@ -14,29 +15,27 @@
       rel="stylesheet"
     />
   </head>
- 
+
   <body>
-   
+    
     <main>
-    <div class="screen1 hide">
-      <h1>Jogo da Adivinhação</h1>
-      <p>Advinhe um número entre 0 e 10</p>
+      <div class="screen1">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Advinhe um número entre 0 e 10</p>
 
-      <form>
-        <input id="inputNumber" type="number" />
-        <button onclick="handleClick(event)">Tentar</button>
-      </form>
-    </div>
+        <form>
+          <input id="inputNumber" type="number" />
+          <button onclick="handleClick(event)">Tentar</button>
+        </form>
+      </div>
 
-    <div class="screen2">
-      <h2>Acertou em 3 vezes</h2>
-      <button>Jogar novamente</button>
-    </div>
-   
+      <div class="screen2 hide">
+        <h2>Acertou em 3 vezes</h2>
+        <button>Jogar novamente</button>
+      </div>
     </main>
-  
 
     <script src="./main.js"></script>
   </body>
 
-</html>
+  </html>
